@@ -1,6 +1,7 @@
-package main.java.com.epam.pihnastyi.part2;
+package com.epam.pihnastyi.part2;
 
-import main.java.com.epam.pihnastyi.part1.Product;
+import com.epam.pihnastyi.part1.Product;
+
 
 public class Demo {
     public static void main(String[] args) {
