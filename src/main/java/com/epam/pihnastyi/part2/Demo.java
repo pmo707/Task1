@@ -6,6 +6,7 @@ import com.epam.pihnastyi.part1.Product;
 public class Demo {
     public static void main(String[] args) {
         //created product
+
         Product product0 = new Product("0","0",0);
         Product product1 = new Product("1","1",1);
         Product product2 = new Product("2","2",2);
