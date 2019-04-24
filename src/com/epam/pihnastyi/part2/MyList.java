@@ -98,7 +98,7 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public boolean addAll(int index, Collection c) {
-        Collections.reverse((List)c);
+        Collections.reverse((List) c);
         for (Object cObj : c) {
             add((E) cObj);
         }
@@ -119,7 +119,7 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public E set(int index, E element) {
-        Product tmp=myElements[index];
+        Product tmp = myElements[index];
         myElements[index] = element;
         return (E) tmp;
 
@@ -152,12 +152,23 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public int indexOf(Object o) {
-        return 0;
+        for (int i = 0; i < myElements.length; i++) {
+            if (o.equals(myElements[i])) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override
     public int lastIndexOf(Object o) {
-        return 0;
+
+        for (int i = myElements.length; i >= 0; i--) {
+            if (o.equals(myElements[i])) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override
@@ -177,12 +188,31 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public boolean retainAll(Collection c) {
-        return false;
+        //TODO check this method
+        boolean result = false;
+        for (int i = 0; i < myElements.length; i++) {
+            for (Object cObj : c) {
+                if (!cObj.equals(myElements[i])) {
+                    remove(cObj);
+                    result=true;
+                }
+            }
+        }
+        return result;
     }
 
     @Override
-    public boolean removeAll(Collection c) {
-        return false;
+    public boolean removeAll(Collection c) { //TODO check this method
+        boolean result = false;
+        for (int i = 0; i < myElements.length; i++) {
+            for (Object cObj : c) {
+                if (cObj.equals(myElements[i])) {
+                    remove(cObj);
+                    result=true;
+                }
+            }
+        }
+        return result;
     }
 
     @Override
@@ -194,7 +224,6 @@ public class MyList<E extends Product> implements List<E> {
         }
         return true;
     }
-
 
 
     public String toString() {
