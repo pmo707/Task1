@@ -1,4 +1,4 @@
-package com.epam.pihnastyi.part1;
+package main.java.com.epam.pihnastyi.part1;
 
 
 import java.util.Objects;

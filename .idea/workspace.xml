@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab3a74d-7933-40f3-83e5-517e4cf76a0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/pihnastyi/part2/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/pihnastyi/part2/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Task1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/pihnastyi/part2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/pihnastyi/part2/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,21 +21,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Product.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#400#401#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Food.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="624">
               <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
               <folding>
                 <element signature="e#1063#1064#0" expanded="true" />
@@ -41,7 +34,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Pizza.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Pizza.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
@@ -50,7 +43,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Drink.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Drink.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
               <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
@@ -63,10 +56,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part2/MyList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="195" column="51" lean-forward="true" selection-start-line="195" selection-start-column="51" selection-end-line="195" selection-end-column="51" />
+            <state relative-caret-position="464">
+              <caret line="165" column="31" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#contains#0;class#MyList#0" />
@@ -77,33 +70,6 @@
                 <element signature="method#clear#0;class#MyList#0" />
                 <element signature="method#add#1;class#MyList#0" />
                 <element signature="method#remove#1;class#MyList#0" />
-                <element signature="e#3989#3990#0" expanded="true" />
-                <element signature="e#4016#4017#0" expanded="true" />
-                <element signature="e#4202#4203#0" expanded="true" />
-                <element signature="e#4229#4230#0" expanded="true" />
-                <element signature="e#4298#4299#0" expanded="true" />
-                <element signature="e#4325#4326#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/beans/binding/ListExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="283" column="42" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part2/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,21 +115,29 @@
         <option value="$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Drink.java" />
         <option value="$PROJECT_DIR$/src/com/epam/pihnastyi/part2/Demo.java" />
         <option value="$PROJECT_DIR$/src/com/epam/pihnastyi/part2/MyList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pihnastyi/part2/MyList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java" />
+        <option value="$PROJECT_DIR$/src/main/test/pihnastyi/part1/Food.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="88" />
-    <option name="y" value="50" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,26 +154,43 @@
               <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
-              <item name="part1" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
-              <item name="part2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Course" />
     </panes>
@@ -207,10 +198,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556138486134" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556139179623" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.16117543" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,11 +218,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.part2.Demo" />
+      <option name="MAIN_CLASS_NAME" value="main.java.pihnastyi.part2.Demo" />
       <module name="Task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.pihnastyi.part2.*" />
+          <option name="PATTERN" value="main.java.pihnastyi.part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,7 +246,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556038981127</updated>
-      <workItem from="1556134532429" duration="2979000" />
+      <workItem from="1556134532429" duration="3163000" />
+      <workItem from="1556138661654" duration="517000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1556039153367</created>
@@ -277,25 +270,30 @@
       <option name="project" value="LOCAL" />
       <updated>1556124213292</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" //TODO check this method">
+      <created>1556138522882</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556138522882</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2979000" />
+    <option name="totallyTimeSpent" value="3680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18255034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1852349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.25893825" />
@@ -308,15 +306,17 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3295302" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +325,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created project" />
     <MESSAGE value="myList" />
-    <option name="LAST_COMMIT_MESSAGE" value="myList" />
+    <MESSAGE value=" //TODO check this method" />
+    <option name="LAST_COMMIT_MESSAGE" value=" //TODO check this method" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -341,7 +342,24 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Collection.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Collections.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/List.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Product.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/beans/binding/ListExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3842">
+          <caret line="283" column="42" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
@@ -351,9 +369,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Food.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Pizza.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
           <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
           <folding>
             <element signature="e#1063#1064#0" expanded="true" />
@@ -362,14 +387,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Pizza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part1/Drink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Drink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
@@ -380,27 +398,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part2/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/test/pihnastyi/part1/Pizza.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/beans/binding/ListExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="283" column="42" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/test/pihnastyi/part2/Demo.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/pihnastyi/part2/MyList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/test/pihnastyi/part1/Product.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/pihnastyi/part2/MyList.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/pihnastyi/part1/Drink.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/pihnastyi/part1/Food.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="195" column="51" lean-forward="true" selection-start-line="195" selection-start-column="51" selection-end-line="195" selection-end-column="51" />
+        <state relative-caret-position="464">
+          <caret line="165" column="31" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#contains#0;class#MyList#0" />
@@ -411,12 +430,6 @@
             <element signature="method#clear#0;class#MyList#0" />
             <element signature="method#add#1;class#MyList#0" />
             <element signature="method#remove#1;class#MyList#0" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4016#4017#0" expanded="true" />
-            <element signature="e#4202#4203#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4298#4299#0" expanded="true" />
-            <element signature="e#4325#4326#0" expanded="true" />
           </folding>
         </state>
       </provider>
