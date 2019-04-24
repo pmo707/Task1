@@ -17,8 +17,16 @@ public class Demo {
 
         MyList<Product> myList = new MyList<>();
         MyList<Product> myList2 = new MyList<>();
+        MyList<Product> myList3 = new MyList<>();
 
 
+        myList3.add(product0);
+        myList3.add(product1);
+        myList3.add(product2);
+        myList3.add(product3);
+        myList3.add(product4);
+        myList3.add(product5);
+        myList3.add(product5);
         //MyList add
         myList.add(product0);
         myList.add(product1);
@@ -49,19 +57,17 @@ public class Demo {
         System.out.println("--addAll to myList2");
         System.out.println(myList2);
 
+
         System.out.println("----------------------------------------------------------");
-        System.out.println("--addAll to myList2 by index");
+        System.out.println("MyList");
+        System.out.println(myList);
+        System.out.println("MyList2");
+        System.out.println(myList2);
+        System.out.println("----------------------------------------------------------");
+
         myList2.addAll(0,myList);
         System.out.println(myList2);
         System.out.println("----------------------------------------------------------");
-        myList2.addAll(myList);
-        System.out.println("++++++++++++++++++++++++++++++");
-        System.out.println("MyList");
-        System.out.println(myList2);
-        System.out.println("reverse MyList");
-        Collections.reverse(myList2);
-        System.out.println(myList2);
-
 
     }
 }

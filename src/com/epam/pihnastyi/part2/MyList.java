@@ -56,6 +56,11 @@ public class MyList<E extends Product> implements List<E> {
     }
 
     @Override
+    public <T> T[] toArray(T[] a) {
+        return null;
+    }
+
+    @Override
     public boolean add(E o) {
         myElements = java.util.Arrays.copyOf(myElements, myElements.length + 1);
         myElements[size] = o;
@@ -94,9 +99,8 @@ public class MyList<E extends Product> implements List<E> {
     @Override
     public boolean addAll(int index, Collection c) {
         Collections.reverse((List)c);
-
         for (Object cObj : c) {
-            System.out.println(cObj);
+            add((E) cObj);
         }
         return true;
     }
@@ -115,7 +119,10 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public E set(int index, E element) {
-        return (E) (myElements[index] = element);
+        Product tmp=myElements[index];
+        myElements[index] = element;
+        return (E) tmp;
+
     }
 
 
@@ -188,10 +195,7 @@ public class MyList<E extends Product> implements List<E> {
         return true;
     }
 
-    @Override
-    public Object[] toArray(Object[] a) {
-        return new Object[0];
-    }
+
 
     public String toString() {
         StringBuilder result = new StringBuilder();
