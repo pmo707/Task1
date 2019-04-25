@@ -74,8 +74,6 @@ public class Demo {
         System.out.println(myList2);
         System.out.println("----------------------------------------------------------");
 
-
-        System.out.println("++++++++++++++++++++++++");
 //        listFirst.retainAll(listSecond);
 //        System.out.println(listFirst);
         System.out.println("----------------------------------------------------------");

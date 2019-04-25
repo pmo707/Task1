@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab3a74d-7933-40f3-83e5-517e4cf76a0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/MyListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Task1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java" afterDir="false" />
     </list>
@@ -33,17 +29,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="216" column="37" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
+            <state relative-caret-position="7">
+              <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1090#1091#0" expanded="true" />
                 <element signature="e#1134#1135#0" expanded="true" />
                 <element signature="e#1669#1670#0" expanded="true" />
                 <element signature="e#1942#1943#0" expanded="true" />
-                <element signature="e#4687#4688#0" expanded="true" />
-                <element signature="e#4779#4780#0" expanded="true" />
-                <element signature="e#4875#4876#0" expanded="true" />
+                <element signature="e#4775#4776#0" expanded="true" />
+                <element signature="e#4867#4868#0" expanded="true" />
+                <element signature="e#4963#4964#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+            <state relative-caret-position="639">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/MyListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -129,6 +134,7 @@
       <find>re</find>
       <find>retainAll</find>
       <find>con</find>
+      <find>rem</find>
     </findStrings>
     <replaceStrings>
       <replace>--------------------------------------------------------------------------------------------------------------------</replace>
@@ -152,6 +158,7 @@
         <option value="$PROJECT_DIR$/src/com/epam/pihnastyi/part2/MyList.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/MyListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java" />
       </list>
     </option>
@@ -162,7 +169,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="89" />
     <option name="y" value="51" />
     <option name="width" value="1400" />
@@ -234,6 +241,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -245,7 +260,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556187406260" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556196606912" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -457,24 +472,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        <state relative-caret-position="639">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/MyListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="216" column="37" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
+        <state relative-caret-position="7">
+          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1090#1091#0" expanded="true" />
             <element signature="e#1134#1135#0" expanded="true" />
             <element signature="e#1669#1670#0" expanded="true" />
             <element signature="e#1942#1943#0" expanded="true" />
-            <element signature="e#4687#4688#0" expanded="true" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#4875#4876#0" expanded="true" />
+            <element signature="e#4775#4776#0" expanded="true" />
+            <element signature="e#4867#4868#0" expanded="true" />
+            <element signature="e#4963#4964#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -114,19 +114,21 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public boolean addAll(Collection c) {
+        int previousSize=size;
         for (Object cObj : c) {
             add((E) cObj);
         }
-        return true;
+        return previousSize<size;
     }
 
     @Override
     public boolean addAll(int index, Collection c) {
+        int previousSize=size;
         Collections.reverse((List) c);
         for (Object cObj : c) {
             add((E) cObj);
         }
-        return true;
+        return previousSize<size;
     }
 
     @Override
@@ -214,9 +216,9 @@ public class MyList<E extends Product> implements List<E> {
     public boolean retainAll(Collection c) {
         boolean result = false;
 
-        for (Object cObj : myElements) {
-            if (!c.contains(cObj)) {
-                remove(cObj);
+        for (Object myObj : myElements) {
+            if (!c.contains(myObj)) {
+                remove(myObj);
                 result = true;
             }
 
@@ -229,9 +231,9 @@ public class MyList<E extends Product> implements List<E> {
     public boolean removeAll(Collection c) {
         boolean result = false;
 
-        for (Object cObj : myElements) {
-            if (c.contains(cObj)) {
-                remove(cObj);
+        for (Object myObj : myElements) {
+            if (c.contains(myObj)) {
+                remove(myObj);
                 result = true;
             }
         }
