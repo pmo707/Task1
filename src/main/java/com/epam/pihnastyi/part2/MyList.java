@@ -1,10 +1,10 @@
 package com.epam.pihnastyi.part2;
 
 
-
 import com.epam.pihnastyi.part1.Product;
 
 import java.util.*;
+import java.util.function.Predicate;
 
 public class MyList<E extends Product> implements List<E> {
 
@@ -46,9 +46,31 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public Iterator iterator() {
-        return new myIterator();
+        return new Iterator() {
+            int index = -1;
+            boolean wasCall = false;
+
+            @Override
+            public boolean hasNext() {
+                return index < myElements.length - 1;
+            }
+
+            @Override
+            public Object next() {
+                wasCall = false;
+                if (!hasNext()) {
+                    throw new java.util.NoSuchElementException();
+                } else {
+                    index++;
+                    return (E) myElements[index];
+                }
+            }
+        };
     }
 
+    public Iterator iterator(Predicate predicate) {
+        return new MyIterator(predicate);
+    }
 
     @Override
     public Object[] toArray() {
@@ -190,30 +212,30 @@ public class MyList<E extends Product> implements List<E> {
 
     @Override
     public boolean retainAll(Collection c) {
-        //TODO check this method
         boolean result = false;
-        for (int i = 0; i < myElements.length; i++) {
-            for (Object cObj : c) {
-                if (!cObj.equals(myElements[i])) {
-                    remove(cObj);
-                    result=true;
-                }
+
+        for (Object cObj : myElements) {
+            if (!c.contains(cObj)) {
+                remove(cObj);
+                result = true;
             }
+
+
         }
         return result;
     }
 
     @Override
-    public boolean removeAll(Collection c) { //TODO check this method
+    public boolean removeAll(Collection c) {
         boolean result = false;
-        for (int i = 0; i < myElements.length; i++) {
-            for (Object cObj : c) {
-                if (cObj.equals(myElements[i])) {
-                    remove(cObj);
-                    result=true;
-                }
+
+        for (Object cObj : myElements) {
+            if (c.contains(cObj)) {
+                remove(cObj);
+                result = true;
             }
         }
+
         return result;
     }
 
@@ -243,30 +265,40 @@ public class MyList<E extends Product> implements List<E> {
         return result.toString();
     }
 
-    class myIterator implements Iterator {
+    class MyIterator<E> implements Iterator<E> {
         protected int index;
+        protected int checker;
+        Predicate<E> predicate;
+        protected boolean wasCall;
 
-
-        myIterator() {
-            index = -1;
-            wasCall = false;
+        public MyIterator() {
         }
 
-        protected boolean wasCall;
+        MyIterator(Predicate<E> predicate) {
+            index = -1;
+            checker = -1;
+            wasCall = false;
+            this.predicate = predicate;
+        }
 
         @Override
         public boolean hasNext() {
+            if (checker < myElements.length) {
+                while (!predicate.test((E) myElements[checker])) {
+                    checker++;
+                }
+            }
             return index < myElements.length - 1;
         }
 
         @Override
-        public Object next() {
+        public E next() {
             wasCall = false;
             if (!hasNext()) {
                 throw new java.util.NoSuchElementException();
             } else {
                 index++;
-                return myElements[index];
+                return (E) myElements[index];
             }
         }
 

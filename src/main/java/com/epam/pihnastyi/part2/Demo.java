@@ -7,25 +7,31 @@ public class Demo {
     public static void main(String[] args) {
         //created product
 
-        Product product0 = new Product("0","0",0);
-        Product product1 = new Product("1","1",1);
-        Product product2 = new Product("2","2",2);
-        Product product3 = new Product("3","3",3);
-        Product product4 = new Product("4","4",4);
-        Product product5 = new Product("5","5",5);
+        Product product0 = new Product("0", "0", 0);
+        Product product1 = new Product("1", "1", 1);
+        Product product2 = new Product("2", "2", 2);
+        Product product3 = new Product("3", "3", 3);
+        Product product4 = new Product("4", "4", 4);
+        Product product5 = new Product("5", "5", 5);
+        Product productColor1 = new Product("White", "5", 5);
+        Product productColor2 = new Product("Black", "5", 5);
+        Product productColor3 = new Product("Red", "5", 5);
+        Product productColor4 = new Product("Green", "5", 5);
+
 
         MyList<Product> myList = new MyList<>();
         MyList<Product> myList2 = new MyList<>();
-        MyList<Product> myList3 = new MyList<>();
+        MyList<Product> listFirst = new MyList<>();
+        MyList<Product> listSecond = new MyList<>();
 
 
-        myList3.add(product0);
-        myList3.add(product1);
-        myList3.add(product2);
-        myList3.add(product3);
-        myList3.add(product4);
-        myList3.add(product5);
-        myList3.add(product5);
+        listFirst.add(productColor1);
+        listFirst.add(productColor2);
+        listFirst.add(productColor3);
+
+        listSecond.add(productColor4);
+        listSecond.add(productColor3);
+        listSecond.add(productColor1);
         //MyList add
         myList.add(product0);
         myList.add(product1);
@@ -64,8 +70,17 @@ public class Demo {
         System.out.println(myList2);
         System.out.println("----------------------------------------------------------");
 
-        myList2.addAll(0,myList);
+        myList2.addAll(0, myList);
         System.out.println(myList2);
+        System.out.println("----------------------------------------------------------");
+
+
+        System.out.println("++++++++++++++++++++++++");
+//        listFirst.retainAll(listSecond);
+//        System.out.println(listFirst);
+        System.out.println("----------------------------------------------------------");
+        listFirst.removeAll(listSecond);
+        System.out.println(listFirst);
         System.out.println("----------------------------------------------------------");
 
     }
