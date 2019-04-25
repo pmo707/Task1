@@ -26,12 +26,11 @@ public class Demo {
 
 
         listFirst.add(productColor1);
-        listFirst.add(productColor2);
-        listFirst.add(productColor3);
+        listFirst.add(productColor1);
 
-        listSecond.add(productColor4);
-        listSecond.add(productColor3);
         listSecond.add(productColor1);
+        listSecond.add(productColor2);
+
         //MyList add
         myList.add(product0);
         myList.add(product1);
@@ -74,12 +73,12 @@ public class Demo {
         System.out.println(myList2);
         System.out.println("----------------------------------------------------------");
 
-//        listFirst.retainAll(listSecond);
-//        System.out.println(listFirst);
-        System.out.println("----------------------------------------------------------");
-        listFirst.removeAll(listSecond);
+        listFirst.retainAll(listSecond);
         System.out.println(listFirst);
         System.out.println("----------------------------------------------------------");
+//        listFirst.removeAll(listSecond);
+//        System.out.println(listFirst);
+//        System.out.println("----------------------------------------------------------");
 
     }
 }
