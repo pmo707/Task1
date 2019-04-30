@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab3a74d-7933-40f3-83e5-517e4cf76a0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/ProductList$ProductIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/ProductList$ProductIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/ProductList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/ProductList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Task1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/epam/pihnastyi/part2/ProductListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/pihnastyi/part2/ProductListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,14 +69,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="332" selection-start-line="315" selection-end-line="355" />
+            <state relative-caret-position="184">
+              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="167" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#501#502#0" expanded="true" />
                 <element signature="e#528#529#0" expanded="true" />
                 <element signature="e#1770#1771#0" expanded="true" />
                 <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="method#remove#1;class#ProductList#0" />
+                <element signature="method#clear#0;class#ProductList#0" />
+                <element signature="method#get#0;class#ProductList#0" />
+                <element signature="method#set#0;class#ProductList#0" />
+                <element signature="method#indexOf#0;class#ProductList#0" />
+                <element signature="method#lastIndexOf#0;class#ProductList#0" />
               </folding>
             </state>
           </provider>
@@ -90,12 +91,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="337">
+              <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="method#get#0;class#CopyOnWriteProductList#0" />
+                <element signature="method#set#0;class#CopyOnWriteProductList#0" />
+                <element signature="method#remove#1;class#CopyOnWriteProductList#0" />
+                <element signature="method#indexOf#0;class#CopyOnWriteProductList#0" />
+                <element signature="method#lastIndexOf#0;class#CopyOnWriteProductList#0" />
+                <element signature="e#1611#1612#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
+                <element signature="e#1703#1704#0" expanded="true" />
+                <element signature="e#1730#1731#0" expanded="true" />
+                <element signature="e#1799#1800#0" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
                 <element signature="e#459#460#0" expanded="true" />
                 <element signature="e#495#496#0" expanded="true" />
                 <element signature="e#545#546#0" expanded="true" />
@@ -153,15 +167,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cle</find>
-      <find>set</find>
-      <find>---------------------------------------------------------</find>
-      <find>------------------------------------</find>
-      <find>add</find>
-      <find>contains</find>
       <find>toAr</find>
       <find>re</find>
-      <find>retainAll</find>
       <find>rem</find>
       <find>con</find>
       <find>indexO</find>
@@ -179,9 +186,17 @@
       <find>product</find>
       <find>snaps</find>
       <find>remo</find>
-      <find>addAll</find>
-      <find>get</find>
       <find>itera</find>
+      <find>add</find>
+      <find>get</find>
+      <find>add(int index</find>
+      <find>remove(int index</find>
+      <find>retainAll</find>
+      <find>removeAll(Collection c</find>
+      <find>containsAll(Collection c</find>
+      <find>addAll</find>
+      <find>clear</find>
+      <find>remove(Object o</find>
     </findStrings>
     <replaceStrings>
       <replace>--------------------------------------------------------------------------------------------------------------------</replace>
@@ -209,10 +224,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/MyList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/COWPLIterator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/part2/ProductListTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" />
       </list>
     </option>
   </component>
@@ -323,7 +338,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556636028169" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556643600223" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -494,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556207167024</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task2">
+      <created>1556636998562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556636998562</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -597,7 +619,8 @@
     <MESSAGE value="created project" />
     <MESSAGE value="myList" />
     <MESSAGE value="with test" />
-    <option name="LAST_COMMIT_MESSAGE" value="with test" />
+    <MESSAGE value="task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="task2" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -711,20 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="332" selection-start-line="315" selection-end-line="355" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#1770#1771#0" expanded="true" />
-            <element signature="e#1823#1824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -735,14 +744,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="184">
+          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="167" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#1770#1771#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="method#remove#1;class#ProductList#0" />
+            <element signature="method#clear#0;class#ProductList#0" />
+            <element signature="method#get#0;class#ProductList#0" />
+            <element signature="method#set#0;class#ProductList#0" />
+            <element signature="method#indexOf#0;class#ProductList#0" />
+            <element signature="method#lastIndexOf#0;class#ProductList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="method#get#0;class#CopyOnWriteProductList#0" />
+            <element signature="method#set#0;class#CopyOnWriteProductList#0" />
+            <element signature="method#remove#1;class#CopyOnWriteProductList#0" />
+            <element signature="method#indexOf#0;class#CopyOnWriteProductList#0" />
+            <element signature="method#lastIndexOf#0;class#CopyOnWriteProductList#0" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1799#1800#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
             <element signature="e#459#460#0" expanded="true" />
             <element signature="e#495#496#0" expanded="true" />
             <element signature="e#545#546#0" expanded="true" />

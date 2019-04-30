@@ -242,20 +242,6 @@ public class ProductList<E extends Product> implements List<E> {
         return -1;
     }
 
-    @Override
-    public ListIterator listIterator() {
-        return null;
-    }
-
-    @Override
-    public ListIterator listIterator(int index) {
-        return null;
-    }
-
-    @Override
-    public List subList(int fromIndex, int toIndex) {
-        return null;
-    }
 
     @Override
     public boolean retainAll(Collection c) {
@@ -297,6 +283,20 @@ public class ProductList<E extends Product> implements List<E> {
         return true;
     }
 
+    @Override
+    public ListIterator listIterator() {
+        return null;
+    }
+
+    @Override
+    public ListIterator listIterator(int index) {
+        return null;
+    }
+
+    @Override
+    public List subList(int fromIndex, int toIndex) {
+        return null;
+    }
 
     public String toString() {
         StringBuilder result = new StringBuilder();
@@ -338,7 +338,7 @@ public class ProductList<E extends Product> implements List<E> {
                     checker++;
                 }
             }
-            return index < productsArray.length ;
+            return index < productsArray.length;
         }
 
         @Override
@@ -346,7 +346,7 @@ public class ProductList<E extends Product> implements List<E> {
 
             wasCall = false;
             if (!hasNext()) {
-                throw new java.util.NoSuchElementException();
+                throw new NoSuchElementException();
             } else {
                 index = checker;
                 checker++;
