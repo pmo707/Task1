@@ -67,7 +67,7 @@ public class ProductList<E extends Product> implements List<E> {
             public Object next() {
                 wasCall = false;
                 if (!hasNext()) {
-                    throw new java.util.NoSuchElementException();
+                    throw new NoSuchElementException();
                 } else {
                     index++;
                     return (E) productsArray[index];
@@ -128,12 +128,23 @@ public class ProductList<E extends Product> implements List<E> {
 
     @Override
     public boolean addAll(int index, Collection c) {
-        int previousSize = size;
-        Collections.reverse((List) c);
-        for (Object cObj : c) {
-            add((E) cObj);
+        if ((index > size) || (index < 0)) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", but size is " + size);
         }
-        return c.size() == productsArray.length - previousSize;
+        if ((c == null) || c.size() == 0) {
+            return false;
+        }
+        int newSize = size + c.size();
+        if (size < newSize) {
+            productsArray = Arrays.copyOf(productsArray, newSize);
+        }
+        if (index != size) {
+            System.arraycopy(productsArray, index, productsArray, index + c.size(), size - index);
+        }
+        System.arraycopy(c.toArray(), 0, productsArray, index, c.size());
+        size = size() + c.size();
+        size = newSize;
+        return true;
     }
 
     @Override
@@ -246,7 +257,6 @@ public class ProductList<E extends Product> implements List<E> {
         return null;
     }
 
-
     @Override
     public boolean retainAll(Collection c) {
         boolean result = false;
@@ -309,14 +319,16 @@ public class ProductList<E extends Product> implements List<E> {
         protected int checker;
         protected boolean wasCall;
 
+
         public ProductIterator() {
         }
 
         ProductIterator(Predicate<E> predicate) {
-            index = -1;
-            checker = -1;
+            index = 0;
+            checker = 0;
             wasCall = false;
             this.predicate = predicate;
+
         }
 
         @Override
@@ -326,16 +338,18 @@ public class ProductList<E extends Product> implements List<E> {
                     checker++;
                 }
             }
-            return index < productsArray.length - 1;
+            return index < productsArray.length ;
         }
 
         @Override
         public E next() {
+
             wasCall = false;
             if (!hasNext()) {
                 throw new java.util.NoSuchElementException();
             } else {
-                index++;
+                index = checker;
+                checker++;
                 return (E) productsArray[index];
             }
         }
@@ -352,5 +366,6 @@ public class ProductList<E extends Product> implements List<E> {
 
         }
     }
+
 }
 
