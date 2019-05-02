@@ -1,8 +1,11 @@
 package com.epam.pihnastyi.part2;
 
 import com.epam.pihnastyi.part1.Product;
+import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,25 +18,32 @@ import static org.junit.Assert.*;
 
 public class ProductListTest {
 
-
-    List<Product> list = new ProductList<>();
-    List<Product> initList = new ArrayList<>(asList(new Product("product2", "color2", 2),
-            new Product("product1", "color1", 1), new Product("product3",
-                    "color3", 3)));
-    List<Product> initListWithNull = new ArrayList<>(asList(null,
-            new Product("product1", "color1", 1), null));
+    List<Product> list;
+    List<Product> initList;
+    List<Product> initListWithNull;
+    Iterator<Product> iterator;
 
     @Before
     public void setUp() {
         list = new ProductList<>();
+        initList = new ProductList<>();
+        initListWithNull = new ProductList<>();
+        initList.add(new Product("product2", "color2", 2));
+        initList.add(new Product("product1", "color1", 1));
+        initList.add(new Product("product3", "color3", 3));
+        initListWithNull.add(null);
+        initListWithNull.add(new Product("product1", "color1", 1));
+        initListWithNull.add(null);
     }
+
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
 
     @Test
     public void returnElementsPositionInThisList() {
         fillInList(list);
         assertEquals(new Product("product1", "color1", 1), list.get(0));
     }
-
 
     @Test
     public void appendsSpecifiedElementToEndOfThisList() {
@@ -52,7 +62,6 @@ public class ProductListTest {
         assertArrayEquals(initList.toArray(), list.toArray());
         assertEquals(list.size(), 3);
     }
-
 
     @Test
     public void removeFirstSpecifiedElementFromThisList() {
@@ -73,16 +82,16 @@ public class ProductListTest {
 
 
     @Test(expected = IndexOutOfBoundsException.class)
-    public void removeSpecifiedElementByIWrongIndex() {
+    public void removeShouldThrowExceptionIfThereIsNoSuchElement() {
         list.remove(41);
     }
 
     @Test
     public void removesElementInThisListByIndex() {
-        final int INDEX_FOR_DELETE = 1;
+        int indexForDelete = 1;
         fillInList(list);
         int previousSize = list.size();
-        list.remove(INDEX_FOR_DELETE);
+        list.remove(indexForDelete);
         assertArrayEquals(asList(new Product("product1", "color1", 1), new Product("product3",
                 "color3", 3)).toArray(), list.toArray());
         assertEquals(previousSize - 1, list.size());
@@ -90,11 +99,11 @@ public class ProductListTest {
 
     @Test
     public void removesElementInThisListByLastIndex() {
-        final int INDEX_FOR_DELETE;
+        final int indexForDelete;
         fillInList(list);
-        INDEX_FOR_DELETE = list.size() - 1;
+        indexForDelete = list.size() - 1;
         int previousSize = list.size();
-        list.remove(INDEX_FOR_DELETE);
+        list.remove(indexForDelete);
         assertArrayEquals(asList(new Product("product1", "color1", 1), new Product("product2",
                 "color2", 2)).toArray(), list.toArray());
         assertEquals(previousSize - 1, list.size());
@@ -110,15 +119,14 @@ public class ProductListTest {
         assertEquals(list.size(), 3);
     }
 
-
     @Test
     public void appendsSpecifiedElementByIndex() {
-        final int INDEX_FOR_ADD = 2;
+        final int indexForAdd = 2;
         Product product5 = new Product("product5", "color5", 5);
         fillInList(list);
         int previousSize = list.size();
-        list.add(INDEX_FOR_ADD, product5);
-        assertEquals(product5, list.get(INDEX_FOR_ADD));
+        list.add(indexForAdd, product5);
+        assertEquals(product5, list.get(indexForAdd));
         assertEquals(previousSize + 1, list.size());
     }
 
@@ -127,35 +135,51 @@ public class ProductListTest {
         list.add(4, new Product("product2", "color2", 2));
     }
 
+    @Test
+    public void returnsIndexOfTheLastOccurrenceOfTheSpecifiedElement() {
+        int indexOfElement;
+        fillInList(list);
+        indexOfElement = list.lastIndexOf(new Product("product1", "color1", 1));
+        assertEquals(indexOfElement, 0);
+    }
 
+    @Test
+    public void returnsMinusOneWhenElementNotExistInList() {
+        int indexOfElement;
+        fillInList(list);
+        indexOfElement = list.lastIndexOf(new Product("productNotExist", "color1", 1));
+        assertEquals(indexOfElement, -1);
+    }
+
+    //-----------------------------------------------------------------------------------------------------------------
     @Test(expected = NoSuchElementException.class)
     public void runThroughCollectionWithNextWrong() {
         fillInList(list);
-        Iterator<Product> iter = list.iterator();
-        while (iter.hasNext()) {
-            iter.next();
+         iterator = list.iterator();
+        while (iterator.hasNext()) {
+            iterator.next();
         }
-        iter.next();
+        iterator.next();
     }
 
     @Test
     public void runThroughCollectionByIterator() {
-        Iterator<Product> itr = list.iterator();
-        int iterator = 0;
-
-        while (itr.hasNext()) {
-            itr.next();
-            iterator++;
+         iterator = list.iterator();
+        int iteratorCount = 0;
+        while (iterator.hasNext()) {
+            iterator.next();
+            iteratorCount++;
         }
-        assertEquals(iterator, list.size());
+        assertEquals(iteratorCount, list.size());
     }
+
+
+    //-----------------------------------------------------------------------------------------------------------------
 
 
     private void fillInList(List<Product> list) {
         list.add(new Product("product1", "color1", 1));
         list.add(new Product("product2", "color2", 2));
         list.add(new Product("product3", "color3", 3));
-
     }
-
 }
