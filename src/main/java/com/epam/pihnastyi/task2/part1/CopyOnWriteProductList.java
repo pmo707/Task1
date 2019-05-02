@@ -1,6 +1,7 @@
 package com.epam.pihnastyi.task2.part1;
 
 import com.epam.pihnastyi.part1.Product;
+import com.epam.pihnastyi.part2.ProductList;
 
 
 import java.util.*;
@@ -22,29 +23,14 @@ public class CopyOnWriteProductList<E extends Product> implements List<E> {
         return size;
     }
 
-
     @Override
     public boolean isEmpty() {
         return size == 0;
     }
 
-
     @Override
-    public boolean contains(Object o) {
-        if (o != null) {
-            for (int i = 0; i < productsArray.length; i++) {
-                if (o.equals(productsArray[i])) {
-                    return true;
-                }
-            }
-        } else {
-            for (int i = 0; i < productsArray.length; i++) {
-                if (o == productsArray[i]) {
-                    return true;
-                }
-            }
-        }
-        return false;
+    public boolean contains(Object element) {
+        return indexOf(element) >= 0;
     }
 
     public Iterator<E> iterator() {
@@ -58,82 +44,93 @@ public class CopyOnWriteProductList<E extends Product> implements List<E> {
         return newProductsArray;
     }
 
-
     @Override
     public <T> T[] toArray(T[] array) {
-        if (array.length < size)
+        if (array.length < size) {
             return (T[]) copyOf(productsArray, size, array.getClass());
+        }
         System.arraycopy(productsArray, 0, array, 0, size);
-        if (array.length > size)
+        if (array.length > size) {
             array[size] = null;
+        }
         return array;
     }
 
     @Override
-    public boolean add(E o) {
+    public boolean add(E element) {
         productsArray = copyOf(productsArray, productsArray.length + 1);
-        productsArray[size] = o;
+        productsArray[size] = element;
         size++;
         return true;
     }
 
     @Override
-    public boolean remove(Object o) {
-        if (o != null) {
-            for (int i = 0; i < productsArray.length; i++) {
-                if (o.equals(productsArray[i])) {
-                    remove(i);
-                    return true;
-                }
-            }
-        } else {
-            for (int i = 0; i < productsArray.length; i++) {
-                if (o == productsArray[i]) {
-                    remove(i);
-                    return true;
-                }
-            }
+    public boolean remove(Object element) {
+        int indexElementForDelete = indexOf(element);
+        if (indexElementForDelete == -1) {
+            return false;
         }
-        return false;
+        remove(indexElementForDelete);
+        return true;
     }
 
     @Override
-    public boolean addAll(Collection c) {
+    public boolean containsAll(Collection collection) {
+        for (Object cObj : collection) {
+            if (!this.contains(cObj)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public boolean addAll(Collection collection) {
         int previousSize = size;
-        for (Object cObj : c) {
+        for (Object cObj : collection) {
             add((E) cObj);
         }
-        return c.size() == productsArray.length - previousSize;
+        return collection.size() == productsArray.length - previousSize;
     }
 
     @Override
     public boolean addAll(int index, Collection collection) {
-//        if (index > size || index < 0) {
-//            throw new IndexOutOfBoundsException("Index: " + index + ", but size is " + size);
-//        }
-//        if ((collection == null) || collection.size() == 0) {
-//            return false;
-//        }
-//        int newSize = size + collection.size();
-//        if (size < newSize) {
-//            productsArray = copyOf(productsArray, newSize);
-//        }
-//        if (index != size) {
-//            System.arraycopy(productsArray, index, productsArray, index + collection.size(), size - index);
-//        }
-//        System.arraycopy(collection.toArray(), 0, productsArray, index, collection.size());
-//        size = size() + collection.size();
-//        size = newSize;
-//        return true;
+        int newSize = size + collection.size();
+        if (size < newSize) {
+            productsArray = copyOf(productsArray, newSize);
+        }
+        if (index != size) {
+            System.arraycopy(productsArray, index, productsArray, index + collection.size(), size - index);
+        }
+        System.arraycopy(collection.toArray(), 0, productsArray, index, collection.size());
+        size = newSize;
+        return true;
+    }
 
-        Product [] tmp=new Product[size-index];
-        System.arraycopy(productsArray,index,tmp,0,size-index);
-        System.arraycopy(collection,0,productsArray,index,collection.size());
-        System.arraycopy(tmp,0,productsArray,index+collection.size(),tmp.length);
+    @Override
+    public boolean retainAll(Collection collection) {
+        boolean result = false;
 
-return true;
+        for (Object element : productsArray) {
+            if (!collection.contains(element)) {
+                remove(element);
+                result = true;
+            }
+        }
+        return result;
+    }
 
+    @Override
+    public boolean removeAll(Collection collection) {
+        boolean result = false;
 
+        for (Object element : productsArray) {
+            if (collection.contains(element)) {
+                remove(element);
+                result = true;
+            }
+        }
+        return result;
     }
 
     @Override
@@ -144,7 +141,6 @@ return true;
 
     @Override
     public E get(int index) {
-
         return (E) productsArray[index];
     }
 
@@ -153,7 +149,6 @@ return true;
         Product tmp = productsArray[index];
         productsArray[index] = element;
         return (E) tmp;
-
     }
 
     @Override
@@ -166,30 +161,25 @@ return true;
 
     @Override
     public E remove(int index) {
-
-        E removeElement;
-        removeElement = (E) productsArray[index];
-        if (index == size - 1) {
-            productsArray = copyOf(productsArray, productsArray.length - 1);
-        } else {
-            System.arraycopy(productsArray, index + 1, productsArray, index, size - index - 1);
-            productsArray = copyOf(productsArray, productsArray.length - 1);
-        }
+        checkIndex(index);
+        E removeElement = (E) productsArray[index];
+        System.arraycopy(productsArray, index + 1, productsArray, index, size - index - 1);
+        productsArray = copyOf(productsArray, productsArray.length - 1);
         size--;
         return (E) removeElement;
     }
 
     @Override
-    public int indexOf(Object o) {
-        if (o != null) {
+    public int indexOf(Object element) {
+        if (element != null) {
             for (int i = 0; i < productsArray.length; i++) {
-                if (o.equals(productsArray[i])) {
+                if (element.equals(productsArray[i])) {
                     return i;
                 }
             }
         } else {
             for (int i = 0; i < productsArray.length; i++) {
-                if (o == productsArray[i]) {
+                if (element == productsArray[i]) {
                     return i;
                 }
             }
@@ -198,82 +188,43 @@ return true;
     }
 
     @Override
-    public int lastIndexOf(Object o) {
-
-        if (o != null) {
-            for (int i = productsArray.length; i >= 0; i--) {
-                if (o.equals(productsArray[i])) {
+    public int lastIndexOf(Object element) {
+        if (element != null) {
+            for (int i = productsArray.length - 1; i >= 0; i--) {
+                if (element.equals(productsArray[i])) {
                     return i;
                 }
             }
         } else {
-            for (int i = productsArray.length; i >= 0; i--) {
-                if (o == productsArray[i]) {
+            for (int i = productsArray.length - 1; i >= 0; i--) {
+                if (element == productsArray[i]) {
                     return i;
                 }
             }
         }
-
         return -1;
     }
-
 
     @Override
     public ListIterator listIterator() {
-        return null;
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
     }
 
     @Override
     public ListIterator listIterator(int index) {
-        return null;
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
     }
 
     @Override
     public List subList(int fromIndex, int toIndex) {
-        return null;
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
     }
 
-
-    @Override
-    public boolean retainAll(Collection c) {
-        boolean result = false;
-
-        for (Object myObj : productsArray) {
-            if (!c.contains(myObj)) {
-                remove(myObj);
-                result = true;
-            }
-
+    private void checkIndex(int index) {
+        if ((index > size) || (index < 0)) {
+            throw new IndexOutOfBoundsException("Index is " + index + ", but size is " + size);
         }
-        return result;
     }
-
-
-    @Override
-    public boolean removeAll(Collection c) {
-        boolean result = false;
-
-        for (Object myObj : productsArray) {
-            if (c.contains(myObj)) {
-                remove(myObj);
-                result = true;
-            }
-        }
-
-        return result;
-    }
-
-
-    @Override
-    public boolean containsAll(Collection c) {
-        for (Object cObj : c) {
-            if (!this.contains(cObj)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
 
     private class COWPLIterator implements Iterator {
 
@@ -298,6 +249,17 @@ return true;
             } else {
                 index++;
                 return (E) productsArray[index];
+            }
+        }
+
+        @Override
+        public void remove() {
+            if (wasCall) {
+                throw new IllegalStateException();
+            } else {
+                wasCall = true;
+                CopyOnWriteProductList.this.remove(index);
+                index--;
             }
         }
     }

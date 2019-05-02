@@ -59,6 +59,7 @@ public class ProductList<E extends Product> implements List<E> {
                     return (E) productsArray[index];
                 }
             }
+
             @Override
             public void remove() {
                 if (wasCall) {
@@ -122,9 +123,7 @@ public class ProductList<E extends Product> implements List<E> {
 
     @Override
     public boolean addAll(int index, Collection collection) {
-
         int newSize = size + collection.size();
-
         if (size < newSize) {
             productsArray = copyOf(productsArray, newSize);
         }
@@ -134,8 +133,6 @@ public class ProductList<E extends Product> implements List<E> {
         System.arraycopy(collection.toArray(), 0, productsArray, index, collection.size());
         size = newSize;
         return true;
-
-
     }
 
     @Override
@@ -250,17 +247,17 @@ public class ProductList<E extends Product> implements List<E> {
 
     @Override
     public ListIterator listIterator() {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
     }
 
     @Override
     public ListIterator listIterator(int index) {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
     }
 
     @Override
     public List subList(int fromIndex, int toIndex) {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
     }
 
     private void checkIndex(int index) {
@@ -286,12 +283,15 @@ public class ProductList<E extends Product> implements List<E> {
 
     class ProductIterator<E> implements Iterator<E> {
         Predicate<E> predicate;
+        Product[] products;
         int index;
         int checker;
         boolean wasCall;
 
         ProductIterator(Predicate<E> predicate) {
             this.predicate = predicate;
+
+
         }
 
         @Override

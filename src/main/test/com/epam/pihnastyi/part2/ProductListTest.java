@@ -7,10 +7,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
+import java.util.function.Predicate;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.*;
@@ -18,7 +16,7 @@ import static org.junit.Assert.*;
 
 public class ProductListTest {
 
-    List<Product> list;
+    ProductList<Product> list;
     List<Product> initList;
     List<Product> initListWithNull;
     Iterator<Product> iterator;
@@ -155,7 +153,7 @@ public class ProductListTest {
     @Test(expected = NoSuchElementException.class)
     public void runThroughCollectionWithNextWrong() {
         fillInList(list);
-         iterator = list.iterator();
+        iterator = list.iterator();
         while (iterator.hasNext()) {
             iterator.next();
         }
@@ -164,7 +162,8 @@ public class ProductListTest {
 
     @Test
     public void runThroughCollectionByIterator() {
-         iterator = list.iterator();
+        fillInList(list);
+        iterator = list.iterator();
         int iteratorCount = 0;
         while (iterator.hasNext()) {
             iterator.next();
@@ -172,6 +171,76 @@ public class ProductListTest {
         }
         assertEquals(iteratorCount, list.size());
     }
+
+    @Test
+    public void hasNextContainsAtLeastOneElementShouldReturnTrue() {
+        list.add(new Product());
+        iterator = list.iterator();
+        Assert.assertTrue(iterator.hasNext());
+    }
+
+    @Test
+    public void hasNextEmptyCollectionShouldReturnFalse() {
+        iterator = list.iterator();
+        Assert.assertFalse(iterator.hasNext());
+    }
+
+    @Test
+    public void nextHasNextShouldReturnNextObject() {
+        Product product = new Product("test", "test", 1);
+        list.add(product);
+        iterator = list.iterator();
+        Product actualProduct = iterator.next();
+        assertSame(product, actualProduct);
+    }
+
+
+    @Test
+    public void hasNextWithPredicateCorrectPredicateShouldReturnTrue() {
+        fillInList(list);
+        Predicate<Product> predicate = Objects::nonNull;
+        iterator = list.iterator(predicate);
+        assertTrue(iterator.hasNext());
+    }
+
+
+    @Test
+    public void nextWithPredicateHasNextShouldReturnNextObject() {
+        Product currentProduct = new Product("product2", "color2", 2);
+        fillInList(list);
+        Predicate<Product> predicate = product -> product.getName().equals("product2");
+        iterator = list.iterator(predicate);
+        Product actualProduct = iterator.next();
+        assertEquals(currentProduct, actualProduct);
+
+    }
+
+    @Test
+    public void removeFromCollectionTheLastElementReturnedByThisIterator () {
+        Product removedProduct = new Product("product1", "color1", 1);
+        fillInList(list);
+        iterator = list.iterator();
+        Product actualProduct = iterator.next();
+        iterator.remove();
+        assertEquals(removedProduct, actualProduct);
+        assertEquals(list.size(), 2);
+    }
+
+    @Test
+    public void removeFromCollectionTheLastElementReturnedByThisIteratorWithPredicate () {
+        Product removedProduct = new Product("product2", "color2", 2);
+        Predicate<Product> predicate = product -> product.getName().equals("product2");
+        fillInList(list);
+        iterator = list.iterator(predicate);
+        Product actualProduct = iterator.next();
+        iterator.remove();
+        assertEquals(removedProduct, actualProduct);
+        assertEquals(list.size(), 2);
+    }
+
+
+
+
 
 
     //-----------------------------------------------------------------------------------------------------------------
