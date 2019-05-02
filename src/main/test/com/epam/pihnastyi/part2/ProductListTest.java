@@ -78,7 +78,6 @@ public class ProductListTest {
         assertEquals(initListWithNull.size(), 2);
     }
 
-
     @Test(expected = IndexOutOfBoundsException.class)
     public void removeShouldThrowExceptionIfThereIsNoSuchElement() {
         list.remove(41);
@@ -149,7 +148,6 @@ public class ProductListTest {
         assertEquals(indexOfElement, -1);
     }
 
-    //-----------------------------------------------------------------------------------------------------------------
     @Test(expected = NoSuchElementException.class)
     public void runThroughCollectionWithNextWrong() {
         fillInList(list);
@@ -203,7 +201,6 @@ public class ProductListTest {
         assertTrue(iterator.hasNext());
     }
 
-
     @Test
     public void nextWithPredicateHasNextShouldReturnNextObject() {
         Product currentProduct = new Product("product2", "color2", 2);
@@ -212,11 +209,10 @@ public class ProductListTest {
         iterator = list.iterator(predicate);
         Product actualProduct = iterator.next();
         assertEquals(currentProduct, actualProduct);
-
     }
 
     @Test
-    public void removeFromCollectionTheLastElementReturnedByThisIterator () {
+    public void removeFromCollectionTheLastElementReturnedByThisIterator() {
         Product removedProduct = new Product("product1", "color1", 1);
         fillInList(list);
         iterator = list.iterator();
@@ -227,7 +223,7 @@ public class ProductListTest {
     }
 
     @Test
-    public void removeFromCollectionTheLastElementReturnedByThisIteratorWithPredicate () {
+    public void removeFromCollectionTheLastElementReturnedByThisIteratorWithPredicate() {
         Product removedProduct = new Product("product2", "color2", 2);
         Predicate<Product> predicate = product -> product.getName().equals("product2");
         fillInList(list);
@@ -237,14 +233,6 @@ public class ProductListTest {
         assertEquals(removedProduct, actualProduct);
         assertEquals(list.size(), 2);
     }
-
-
-
-
-
-
-    //-----------------------------------------------------------------------------------------------------------------
-
 
     private void fillInList(List<Product> list) {
         list.add(new Product("product1", "color1", 1));
