@@ -4,80 +4,225 @@ package com.epam.pihnastyi.task2.part1;
 import com.epam.pihnastyi.task1.part1.Product;
 
 import java.util.*;
+import java.util.function.Predicate;
 
-import static java.util.Arrays.copyOf;
+public class CopyOnWriteProductList<T extends Product> implements List<T> {
 
-public class CopyOnWriteProductList<E extends Product> implements List<E> {
+    private static final int DEFAULT_ENSURE_CAPACITY = 10;
 
-    private Product[] productsArray;
-    private int size;
+    private boolean isIteratorCreated;
+    private Object[] products;
+    private int currentSize;
 
-    public CopyOnWriteProductList() {
-        size = 0;
-        productsArray = new Product[0];
+    public CopyOnWriteProductList(int initialCapacity) {
+        this.products = new Object[initialCapacity];
+        this.isIteratorCreated = false;
     }
 
     @Override
     public int size() {
-        return size;
+        return currentSize;
     }
 
     @Override
     public boolean isEmpty() {
-        return size == 0;
+        return currentSize == 0;
     }
 
     @Override
-    public boolean contains(Object element) {
-        return indexOf(element) >= 0;
-    }
-
-    public Iterator<E> iterator() {
-        return new COWPLIterator(this.toArray(productsArray));
+    public boolean contains(Object obj) {
+        return indexOf(obj) >= 0;
     }
 
     @Override
     public Object[] toArray() {
-        Object[] newProductsArray;
-        newProductsArray = copyOf(productsArray, productsArray.length);
-        return newProductsArray;
+        return Arrays.copyOf(products, currentSize);
+    }
+
+    private Object[] getNewArray() {
+        return Arrays.copyOf(products, products.length);
+    }
+
+    private void resetIsIteratorCreated() {
+        if (isIteratorCreated) {
+            products = getNewArray();
+            isIteratorCreated = false;
+        }
     }
 
     @Override
-    public <T> T[] toArray(T[] array) {
-        if (array.length < size) {
-            return (T[]) copyOf(productsArray, size, array.getClass());
-        }
-        System.arraycopy(productsArray, 0, array, 0, size);
-        if (array.length > size) {
-            array[size] = null;
-        }
-        return array;
-    }
-
-    @Override
-    public boolean add(E element) {//
-        Product[] snapshot = this.toArray(productsArray);
-        Product[] arrayBuffer = Arrays.copyOf(snapshot, snapshot.length + 1);
-        arrayBuffer[snapshot.length] = element;
-        productsArray = arrayBuffer;
+    public boolean add(T element) {
+        add(currentSize, element);
         return true;
     }
 
     @Override
-    public boolean remove(Object element) {
-        int indexElementForDelete = indexOf(element);
-        if (indexElementForDelete == -1) {
-            return false;
+    public void add(int index, T element) {
+        checkIndexForAdd(index);
+        ensureCapacityOrResetIterator(currentSize);
+        shiftElementsToTheRight(index, 1);
+        products[index] = element;
+        currentSize++;
+    }
+
+    private void ensureCapacityOrResetIterator(int checkSize) {
+        if (checkSize >= products.length) {
+            ensureCapacity(DEFAULT_ENSURE_CAPACITY);
+            isIteratorCreated = false;
+        } else {
+            resetIsIteratorCreated();
         }
-        remove(indexElementForDelete);
-        return true;
+    }
+
+    private void ensureCapacity(int ensureIndex) {
+        int arrayNewSize = products.length + ensureIndex;
+        products = Arrays.copyOf(products, arrayNewSize);
+    }
+
+    @Override
+    public T remove(int index) {
+        checkIndex(index);
+        resetIsIteratorCreated();
+        T oldValue = (T) products[index];
+        shiftElementsToTheLeft(index);
+        return oldValue;
+    }
+
+    @Override
+    public boolean remove(Object obj) {
+        int indexToRemove = indexOf(obj);
+        if (indexToRemove >= 0) {
+            remove(indexToRemove);
+            return true;
+        }
+        return false;
+    }
+
+    private void shiftElementsToTheRight(int index, int numToShift) {
+        int numToMove = currentSize - index;
+        if (numToMove > 0) {
+            System.arraycopy(products, index, products, index + numToShift, currentSize - index);
+        }
+    }
+
+    private void shiftElementsToTheLeft(int index) {
+        int numToRemove = currentSize - index - 1;
+        if (numToRemove > 0) {
+            System.arraycopy(products, index + 1, products, index, numToRemove);
+        }
+        products[--currentSize] = null;
+    }
+
+    @Override
+    public boolean addAll(Collection collection) {
+        return addAll(currentSize, collection);
+    }
+
+    @Override
+    public boolean addAll(int index, Collection collection) {
+        checkIndexForAdd(index);
+        Object[] tempArray = collection.toArray();
+        int tempLength = tempArray.length;
+        int checkSize = tempLength + currentSize;
+        ensureCapacityOrResetIterator(checkSize);
+        shiftElementsToTheRight(index, tempLength);
+        System.arraycopy(tempArray, 0, products, index, tempLength);
+        currentSize += tempLength;
+        return collection.size()!=0;
+    }
+
+
+    @Override
+    public void clear() {
+        if (isIteratorCreated) {
+            isIteratorCreated = false;
+        }
+        products = Arrays.copyOf(products, DEFAULT_ENSURE_CAPACITY);
+        Arrays.fill(products, null);
+        currentSize = 0;
+    }
+
+    @Override
+    public T get(int index) {
+        checkIndex(index);
+        return (T) products[index];
+    }
+
+    @Override
+    public T set(int index, T element) {
+        checkIndex(index);
+        resetIsIteratorCreated();
+        T oldElement = (T) products[index];
+        products[index] = element;
+        return oldElement;
+    }
+
+    @Override
+    public int indexOf(Object obj) {
+        for (int i = 0; i < currentSize; i++) {
+            if (Objects.equals(obj, products[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public int lastIndexOf(Object obj) {
+        for (int i = currentSize - 1; i >= 0; i--) {
+            if (Objects.equals(obj, products[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public ListIterator<T> listIterator() {
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
+    }
+
+    @Override
+    public ListIterator<T> listIterator(int index) {
+        throw new UnsupportedOperationException("Method listIterator isn't supported");
+    }
+
+    @Override
+    public List<T> subList(int fromIndex, int toIndex) {
+        throw new UnsupportedOperationException("Method subList isn't supported");
+    }
+
+    @Override
+    public boolean retainAll(Collection collection) {
+        boolean isRemoved = false;
+        resetIsIteratorCreated();
+        for (int i = currentSize - 1; i >= 0; i--) {
+            if (!collection.contains(products[i])) {
+                this.remove(products[i]);
+                isRemoved = true;
+            }
+        }
+        return isRemoved;
+    }
+
+    @Override
+    public boolean removeAll(Collection collection) {
+        boolean isRemoved = false;
+        resetIsIteratorCreated();
+        for (int i = currentSize - 1; i >= 0; i--) {
+            if (collection.contains(products[i])) {
+                this.remove(products[i]);
+                isRemoved = true;
+            }
+        }
+        return isRemoved;
     }
 
     @Override
     public boolean containsAll(Collection collection) {
-        for (Object cObj : collection) {
-            if (!this.contains(cObj)) {
+        Object[] array = collection.toArray();
+        for (Object object : array) {
+            if (!this.contains(object)) {
                 return false;
             }
         }
@@ -85,184 +230,75 @@ public class CopyOnWriteProductList<E extends Product> implements List<E> {
     }
 
     @Override
-    public boolean addAll(Collection collection) {
-        int previousSize = size;
-        for (Object cObj : collection) {
-            add((E) cObj);
+    public <E> E[] toArray(E[] array) {
+        return (E[]) Arrays.copyOf(products, currentSize, array.getClass());
+    }
+
+    private void checkIndexForAdd(int index) {
+        if (index > currentSize || index < 0) {
+            throw new IndexOutOfBoundsException("Index= " + index + ", list currentSize= " + currentSize);
         }
-        return collection.size() == productsArray.length - previousSize;
-    }
-
-    @Override
-    public boolean addAll(int index, Collection collection) {
-        int newSize = size + collection.size();
-        if (size < newSize) {
-            productsArray = copyOf(productsArray, newSize);
-        }
-        if (index != size) {
-            System.arraycopy(productsArray, index, productsArray, index + collection.size(), size - index);
-        }
-        System.arraycopy(collection.toArray(), 0, productsArray, index, collection.size());
-        size = newSize;
-        return true;
-    }
-
-    @Override
-    public boolean retainAll(Collection collection) {
-        boolean result = false;
-
-        for (Object element : productsArray) {
-            if (!collection.contains(element)) {
-                remove(element);
-                result = true;
-            }
-        }
-        return result;
-    }
-
-    @Override
-    public boolean removeAll(Collection collection) {
-        boolean result = false;
-
-        for (Object element : productsArray) {
-            if (collection.contains(element)) {
-                remove(element);
-                result = true;
-            }
-        }
-        return result;
-    }
-
-    @Override
-    public void clear() {
-        size = 0;
-        productsArray = new Product[0];
-    }
-
-    @Override
-    public E get(int index) {
-        return (E) productsArray[index];
-    }
-
-    @Override
-    public E set(int index, E element) {
-        Product tmp = productsArray[index];
-        productsArray[index] = element;
-        return (E) tmp;
-    }
-
-    @Override
-    public void add(int index, E element) {//
-        Product[] snapshot = this.toArray(productsArray);
-        Product[] arrayBuffer = Arrays.copyOf(snapshot, snapshot.length + 1);
-        System.arraycopy(arrayBuffer, index, arrayBuffer, index + 1, arrayBuffer.length - index);
-        arrayBuffer[index] = element;
-        productsArray = arrayBuffer;
-    }
-
-    @Override
-    public E remove(int index) {
-        checkIndex(index);
-        Product[] snapshot = this.toArray(productsArray);
-        E removeElement = (E) snapshot[index];
-        System.arraycopy(snapshot, index + 1, snapshot, index, snapshot.length - index - 1);
-        snapshot = copyOf(snapshot, snapshot.length - 1);
-        productsArray = snapshot;
-        return removeElement;
-    }
-
-    @Override
-    public int indexOf(Object element) {
-        if (element != null) {
-            for (int i = 0; i < productsArray.length; i++) {
-                if (element.equals(productsArray[i])) {
-                    return i;
-                }
-            }
-        } else {
-            for (int i = 0; i < productsArray.length; i++) {
-                if (element == productsArray[i]) {
-                    return i;
-                }
-            }
-        }
-        return -1;
-    }
-
-    @Override
-    public int lastIndexOf(Object element) {
-        if (element != null) {
-            for (int i = productsArray.length - 1; i >= 0; i--) {
-                if (element.equals(productsArray[i])) {
-                    return i;
-                }
-            }
-        } else {
-            for (int i = productsArray.length - 1; i >= 0; i--) {
-                if (element == productsArray[i]) {
-                    return i;
-                }
-            }
-        }
-        return -1;
-    }
-
-    @Override
-    public ListIterator listIterator() {
-        throw new UnsupportedOperationException("Method listIterator isn't supported");
-    }
-
-    @Override
-    public ListIterator listIterator(int index) {
-        throw new UnsupportedOperationException("Method listIterator isn't supported");
-    }
-
-    @Override
-    public List subList(int fromIndex, int toIndex) {
-        throw new UnsupportedOperationException("Method listIterator isn't supported");
     }
 
     private void checkIndex(int index) {
-        if ((index > size) || (index < 0)) {
-            throw new IndexOutOfBoundsException("Index is " + index + ", but size is " + size);
+        if (index >= currentSize || index < 0) {
+            throw new IndexOutOfBoundsException("Index= " + index + ", list currentSize= " + currentSize);
         }
     }
 
-    private class COWPLIterator implements Iterator {
+    @Override
+    public ProductIterator<T> iterator() {
+        this.isIteratorCreated = true;
+        return new ProductIterator<>();
+    }
 
-        Product[] copyProducts;
-        int index = -1;
-        boolean wasCall = false;
+    public ProductIterator<T> iterator(Predicate<T> predicate) {
+        this.isIteratorCreated = true;
+        return new ProductIterator<>(predicate, getNewArray(), 0);
+    }
 
-        public COWPLIterator(Product[] copyProducts) {
-            this.copyProducts = copyProducts;
+    private class ProductIterator<E extends T> implements Iterator<E> {
+        private final Predicate<E> DEFAULT_PREDICATE = transport -> true;
+
+        private Predicate<E> predicate;
+        private Object[] snapshot;
+        private int currentIndex;
+        private int currentCopySize;
+
+        ProductIterator() {
+            this.predicate = DEFAULT_PREDICATE;
+            this.snapshot = getNewArray();
+            this.currentIndex = 0;
+            this.currentCopySize = currentSize;
+
+        }
+
+        ProductIterator(Predicate<E> predicate, Object[] snapshot, int currentIndex) {
+            this.predicate = predicate;
+            this.snapshot = snapshot;
+            this.currentIndex = currentIndex;
+            this.currentCopySize = currentSize;
         }
 
         @Override
         public boolean hasNext() {
-            return index < productsArray.length - 1;
+            for (int i = currentIndex; i < currentCopySize; i++) {
+                if (predicate.test((E) snapshot[i])) {
+                    return true;
+                }
+            }
+            return false;
         }
 
         @Override
-        public Object next() {
-            wasCall = false;
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            } else {
-                index++;
-                return (E) productsArray[index];
+        public E next() {
+            for (int i = currentIndex; i < currentCopySize; i++) {
+                if (predicate.test((E) snapshot[i])) {
+                    currentIndex = i + 1;
+                    return (E) snapshot[i];
+                }
             }
-        }
-
-        @Override
-        public void remove() {
-            if (wasCall) {
-                throw new IllegalStateException();
-            } else {
-                wasCall = true;
-                CopyOnWriteProductList.this.remove(index);
-                index--;
-            }
+            throw new NoSuchElementException("Iterator has not next element");
         }
     }
 }

@@ -37,9 +37,9 @@ public class MixedList<T extends Product> implements List<T> {
 
     @Override
     public Object[] toArray() {
-      Object[] products = new Object[size()];
-      System.arraycopy(modifiableList.toArray(), 0, products, 0, modifiableList.size());
-      System.arraycopy(unmodifiableList.toArray(), 0, products, modifiableList.size(), unmodifiableList.size());
+        Object[] products = new Object[size()];
+        System.arraycopy(modifiableList.toArray(), 0, products, 0, modifiableList.size());
+        System.arraycopy(unmodifiableList.toArray(), 0, products, modifiableList.size(), unmodifiableList.size());
         return products;
     }
 
@@ -48,7 +48,7 @@ public class MixedList<T extends Product> implements List<T> {
         Object[] products = new Object[size()];
         System.arraycopy(modifiableList.toArray(), 0, products, 0, modifiableList.size());
         System.arraycopy(unmodifiableList.toArray(), 0, products, modifiableList.size(), unmodifiableList.size());
-        return (T[])products;
+        return (T[]) products;
     }
 
     @Override
