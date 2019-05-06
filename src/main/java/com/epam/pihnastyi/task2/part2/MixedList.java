@@ -2,13 +2,13 @@ package com.epam.pihnastyi.task2.part2;
 
 
 import com.epam.pihnastyi.task1.part1.Product;
+import com.epam.pihnastyi.task1.part2.ProductList;
 
 import java.util.*;
 
 public class MixedList<T extends Product> implements List<T> {
     private List<T> modifiableList;
     private List<T> unmodifiableList;
-
 
     public MixedList(List<T> modifiableList, List<T> unmodifiableList) {
         this.modifiableList = modifiableList;
@@ -37,9 +37,9 @@ public class MixedList<T extends Product> implements List<T> {
 
     @Override
     public Object[] toArray() {
-      Object[] products = new Object[size()];
-      System.arraycopy(modifiableList.toArray(), 0, products, 0, modifiableList.size());
-      System.arraycopy(unmodifiableList.toArray(), 0, products, modifiableList.size(), unmodifiableList.size());
+        Object[] products = new Object[size()];
+        System.arraycopy(modifiableList.toArray(), 0, products, 0, modifiableList.size());
+        System.arraycopy(unmodifiableList.toArray(), 0, products, modifiableList.size(), unmodifiableList.size());
         return products;
     }
 
@@ -48,7 +48,7 @@ public class MixedList<T extends Product> implements List<T> {
         Object[] products = new Object[size()];
         System.arraycopy(modifiableList.toArray(), 0, products, 0, modifiableList.size());
         System.arraycopy(unmodifiableList.toArray(), 0, products, modifiableList.size(), unmodifiableList.size());
-        return (T[])products;
+        return (T[]) products;
     }
 
     @Override
@@ -149,7 +149,10 @@ public class MixedList<T extends Product> implements List<T> {
         if (modifiableList.contains(element)) {
             return modifiableList.indexOf(element);
         }
-        return modifiableList.size() + unmodifiableList.indexOf(element);
+        if (unmodifiableList.contains(element)) {
+            return modifiableList.size() + unmodifiableList.indexOf(element);
+        }
+        return -1;
     }
 
     @Override
@@ -157,7 +160,10 @@ public class MixedList<T extends Product> implements List<T> {
         if (unmodifiableList.contains(element)) {
             return modifiableList.size() + unmodifiableList.lastIndexOf(element);
         }
-        return modifiableList.lastIndexOf(element);
+        if (modifiableList.contains(element)) {
+            return modifiableList.lastIndexOf(element);
+        }
+        return -1;
     }
 
     @Override

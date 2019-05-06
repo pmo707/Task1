@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ab3a74d-7933-40f3-83e5-517e4cf76a0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5ab3a74d-7933-40f3-83e5-517e4cf76a0c" name="Default Changelist" comment="task1&#10;and&#10;task2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task3/part1/ListWithoutDublicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part1/CopyOnWriteProductListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part2/TestMixedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Task1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part1/Drink.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part1/Food.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part1/Pizza.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part1/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part2/ProductList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task1/task1/part2/task1/ProductListTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part1/Drink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part1/Food.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part1/Pizza.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part1/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/ProductList$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/ProductList$ProductIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/pihnastyi/part2/ProductList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/epam/pihnastyi/part2/ProductListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,14 +35,23 @@
     <SUITE FILE_PATH="coverage/Task1$ProductListTest_runThroughCollectionMoreThanPredicateCollectionShould.ic" NAME="ProductListTest.runThroughCollectionMoreThanPredicateCollectionShould Coverage Results" MODIFIED="1556880457066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.pihnastyi.part2.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$TestMixedList_shouldReturnIndexObject.ic" NAME="TestMixedList.shouldReturnIndexObject Coverage Results" MODIFIED="1557151145561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epam.pihnastyi.task2.part2.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Task1$MyListTest_TestAdd.ic" NAME="MyListTest.TestAdd Coverage Results" MODIFIED="1556201366025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.pihnastyi.part2.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task1$ProductListTest.ic" NAME="ProductListTest Coverage Results" MODIFIED="1556881777076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.pihnastyi.part2.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$TestMixedList.ic" NAME="TestMixedList Coverage Results" MODIFIED="1557151156858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epam.pihnastyi.task2.part2.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Task1$ProductListTest_runThroughCollectionMoreThanPredicateCollection.ic" NAME="ProductListTest.runThroughCollectionMoreThanPredicateCollection Coverage Results" MODIFIED="1556879957767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.pihnastyi.part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$TestMixedList_should_add_object_by_index.ic" NAME="TestMixedList.should_add_object_by_index Coverage Results" MODIFIED="1557148809299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epam.pihnastyi.task2.part2.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task1$ProductListTest_testNextWithPredicateHasNextShouldReturnNextObject.ic" NAME="ProductListTest.testNextWithPredicateHasNextShouldReturnNextObject Coverage Results" MODIFIED="1556829520258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.pihnastyi.part2.*</FILTER>
@@ -78,10 +72,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part2/ProductList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="263">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,17 +90,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-365">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="467">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part2/ProductList.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4751">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="221">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part2/TestMixedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1875">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+                <element signature="e#1369#1370#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+                <element signature="e#1494#1495#0" expanded="true" />
+                <element signature="e#1773#1774#0" expanded="true" />
+                <element signature="e#1804#1805#0" expanded="true" />
+                <element signature="e#2207#2208#0" expanded="true" />
+                <element signature="e#2239#2240#0" expanded="true" />
+                <element signature="e#2667#2668#0" expanded="true" />
+                <element signature="e#2713#2714#0" expanded="true" />
+                <element signature="e#2983#2984#0" expanded="true" />
+                <element signature="e#3014#3015#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part1/CopyOnWriteProductListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,41 +147,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/part2/ProductListTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-825">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="-1093">
+              <caret line="110" column="31" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1694#1695#0" expanded="true" />
+                <element signature="e#1744#1745#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Food.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Drink.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Pizza.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-263">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -149,11 +164,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="607" column="17" selection-start-line="607" selection-start-column="17" selection-end-line="607" selection-end-column="17" />
+            <state relative-caret-position="203">
+              <caret line="302" column="19" selection-start-line="302" selection-start-column="19" selection-end-line="302" selection-end-column="19" />
               <folding>
                 <element signature="e#0#54492#0" expanded="true" />
+                <element signature="e#11079#11080#0" expanded="true" />
+                <element signature="e#11117#11118#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3340">
+              <caret line="71" column="25" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task3/part1/ListWithoutDublicates.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2076#2077#0" expanded="true" />
+                <element signature="e#2133#2134#0" expanded="true" />
+                <element signature="e#2188#2189#0" expanded="true" />
+                <element signature="e#2241#2242#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -170,14 +221,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>removeAll(Collection c</find>
-      <find>containsAll(Collection c</find>
-      <find>clear</find>
-      <find>remove(Object o</find>
-      <find>ProductList.this.remove(index);</find>
-      <find>fillInList</find>
-      <find>T[] toArray(T[] array)</find>
-      <find>java.</find>
       <find>java.util.Arrays</find>
       <find>boolean addAll(int index, Collection</find>
       <find>remove(Object</find>
@@ -185,7 +228,6 @@
       <find>remo</find>
       <find>lasti</find>
       <find>remove(</find>
-      <find>last</find>
       <find>TEST_PLANE</find>
       <find>ite</find>
       <find>testHasNextContainsAtLeastOneElementShouldReturnTrue</find>
@@ -200,12 +242,24 @@
       <find>Predicate&lt;Product&gt; predicate = product -&gt; product.getName().equals(&quot;product2&quot;);</find>
       <find>pred</find>
       <find>NoSuchElementException</find>
+      <find>removeSeveralTimeThisElementInPredicateIteratorShouldIllegalStateException</find>
+      <find>Boats</find>
+      <find>Transport</find>
+      <find>ElectricGuitar</find>
+      <find>Animal</find>
+      <find>index</find>
+      <find>add</find>
+      <find>last</find>
+      <find>UnsupportedOperationException</find>
     </findStrings>
     <replaceStrings>
       <replace>--------------------------------------------------------------------------------------------------------------------</replace>
       <replace>System.out.println(&quot;----------------------------------------------------------&quot;);</replace>
       <replace>new Product</replace>
       <replace>new Product()</replace>
+      <replace>Products</replace>
+      <replace>Product</replace>
+      <replace>IllegalArgumentException</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -231,19 +285,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../../Java_Task_2/src/test/java/epam/room_107/dudka/list/TestTransportList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part2/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part2/ProductList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Pizza.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Food.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/part2/ProductListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Drink.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part2/ProductList.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part2/MixedListsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part2/TestMixedList.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task1/part2/ProductListTest.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/part2/ProductListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part1/CopyOnWriteProductListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task3/part1/ListWithoutDublicates.java" />
       </list>
     </option>
   </component>
@@ -273,6 +331,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,59 +374,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
-              <item name="task2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
-              <item name="task2" type="462c0819:PsiDirectoryNode" />
-              <item name="part1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pihnastyi" type="462c0819:PsiDirectoryNode" />
-              <item name="task2" type="462c0819:PsiDirectoryNode" />
-              <item name="part2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="part2" type="462c0819:PsiDirectoryNode" />
+              <item name="task3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Course" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +389,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556903181532" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557161692842" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -388,6 +402,12 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.epam.pihnastyi.part2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maksym_Pihnastyi\Desktop\Study\Pre_Prod_java_q3q4_2017\Task1\src\main\test\com\epam\pihnastyi\task2\part2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.epam.pihnastyi.task2.part1" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -408,67 +428,80 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductListTest (2)">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task1.part2.Demo" />
+  <component name="RunManager" selected="JUnit.TestMixedList.shouldReturnNegativeNumberIfObjectNotContainsInCollection">
+    <configuration name="TestMixedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.pihnastyi.task1.task1.part2.task1.*" />
+          <option name="PATTERN" value="com.epam.pihnastyi.task2.part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task2.part2" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task2.part2.TestMixedList" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductListTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMixedList.shouldRemoveObjectFromCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task1" />
-      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task1.part2" />
-      <option name="MAIN_CLASS_NAME" value="ProductListTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.pihnastyi.task2.part2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task2.part2" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task2.part2.TestMixedList" />
+      <option name="METHOD_NAME" value="shouldRemoveObjectFromCollection" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductListTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMixedList.shouldReturnIndexObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.pihnastyi.task1.part2.*" />
+          <option name="PATTERN" value="com.epam.pihnastyi.task2.part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task1.part2" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task1.part2.ProductListTest" />
+      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task2.part2" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task2.part2.TestMixedList" />
+      <option name="METHOD_NAME" value="shouldReturnIndexObject" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMixedList.shouldReturnLastIndexObject1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.pihnastyi.task1.task1.part2.task1.*" />
+          <option name="PATTERN" value="com.epam.pihnastyi.task2.part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task1.task1.part2.task1" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task1.task1.part2.task1.ProductListTest" />
+      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task2.part2" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task2.part2.TestMixedList" />
+      <option name="METHOD_NAME" value="shouldReturnLastIndexObject1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductListTest.runThroughCollectionMoreThanPredicateCollectionShouldArrayIndexOutOfBoundsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMixedList.shouldReturnNegativeNumberIfObjectNotContainsInCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.pihnastyi.task1.task1.part2.task1.*" />
+          <option name="PATTERN" value="com.epam.pihnastyi.task2.part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task1.task1.part2.task1" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task1.task1.part2.task1.ProductListTest" />
-      <option name="METHOD_NAME" value="runThroughCollectionMoreThanPredicateCollectionShouldArrayIndexOutOfBoundsException" />
+      <option name="PACKAGE_NAME" value="com.epam.pihnastyi.task2.part2" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.pihnastyi.task2.part2.TestMixedList" />
+      <option name="METHOD_NAME" value="shouldReturnNegativeNumberIfObjectNotContainsInCollection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -476,11 +509,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductListTest (2)" />
-        <item itemvalue="JUnit.ProductListTest (1)" />
-        <item itemvalue="JUnit.ProductListTest" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="JUnit.ProductListTest.runThroughCollectionMoreThanPredicateCollectionShouldArrayIndexOutOfBoundsException" />
+        <item itemvalue="JUnit.TestMixedList.shouldReturnNegativeNumberIfObjectNotContainsInCollection" />
+        <item itemvalue="JUnit.TestMixedList" />
+        <item itemvalue="JUnit.TestMixedList.shouldReturnLastIndexObject1" />
+        <item itemvalue="JUnit.TestMixedList.shouldReturnIndexObject" />
+        <item itemvalue="JUnit.TestMixedList.shouldRemoveObjectFromCollection" />
       </list>
     </recent_temporary>
   </component>
@@ -552,39 +585,53 @@
       <option name="project" value="LOCAL" />
       <updated>1556644758790</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="task1&#10;and&#10;task2">
+      <created>1556903157438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556903157438</updated>
+    </task>
+    <task id="LOCAL-00010" summary="task1&#10;and&#10;task2">
+      <created>1556903227628</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556903227628</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductListTest_runThroughCollectionMoreThanPredicateCollectionShouldArrayIndexOutOfBoundsException - 2019.05.03 at 14h 02m 08s.xml">
-      <configuration name="ProductListTest.runThroughCollectionMoreThanPredicateCollectionShouldArrayIndexOutOfBoundsException" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 12m 06s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest_runThroughCollectionMoreThanPredicateCollectionShouldArrayIndexOutOfBoundsException - 2019.05.03 at 14h 09m 28s.xml">
-      <configuration name="ProductListTest.runThroughCollectionMoreThanPredicateCollectionShouldArrayIndexOutOfBoundsException" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 12m 08s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest - 2019.05.03 at 14h 09m 38s.xml">
-      <configuration name="ProductListTest" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 12m 11s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest - 2019.05.03 at 19h 12m 09s.xml">
-      <configuration name="ProductListTest" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 12m 45s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest - 2019.05.03 at 19h 16m 05s.xml">
-      <configuration name="ProductListTest" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 13m 41s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest - 2019.05.03 at 19h 17m 12s.xml">
-      <configuration name="ProductListTest" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 14m 15s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest - 2019.05.03 at 19h 20m 31s.xml">
-      <configuration name="ProductListTest" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 14m 16s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest - 2019.05.03 at 19h 32m 40s.xml">
-      <configuration name="ProductListTest" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnLastIndexObject1 - 2019.05.06 at 17h 14m 34s.xml">
+      <configuration name="TestMixedList.shouldReturnLastIndexObject1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest - 2019.05.03 at 19h 42m 46s.xml">
-      <configuration name="ProductListTest" configurationId="JUnit" />
+    <history-entry file="TestMixedList - 2019.05.06 at 17h 18m 07s.xml">
+      <configuration name="TestMixedList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductListTest_(2) - 2019.05.03 at 20h 00m 41s.xml">
-      <configuration name="ProductListTest (2)" configurationId="JUnit" />
+    <history-entry file="TestMixedList_shouldReturnNegativeNumberIfObjectNotContainsInCollection - 2019.05.06 at 17h 19m 34s.xml">
+      <configuration name="TestMixedList.shouldReturnNegativeNumberIfObjectNotContainsInCollection" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -592,8 +639,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24786781" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -601,14 +649,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.312026" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.25893825" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.312026" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25893825" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -616,8 +664,8 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32827735" />
       <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.3286119" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.18053691" />
@@ -627,7 +675,7 @@
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.23667377" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -635,30 +683,30 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.25637394" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.26062322" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.312026" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25893825" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32827735" />
       <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.3286119" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.18053691" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.23691276" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.23667377" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,10 +717,16 @@
     <MESSAGE value="myList" />
     <MESSAGE value="with test" />
     <MESSAGE value="task2" />
-    <option name="LAST_COMMIT_MESSAGE" value="task2" />
+    <MESSAGE value="task1&#10;and&#10;task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="task1&#10;and&#10;task2" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>modifiableList.size()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>collection.size()</expression-string>
         <language-id>JAVA</language-id>
@@ -711,106 +765,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/COWPLIterator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part1/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part1/Drink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/concurrent/CopyOnWriteArrayList.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Collection.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Arrays.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/List.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/Demo.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#805#806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/Description.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-          <folding>
-            <element signature="e#4327#4328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/rules/ExpectedExceptionMatcherBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/rules/ExpectedException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-          <folding>
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/rules/RunRules.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#1555#1556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/Result.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -845,34 +799,8 @@
     <entry file="file://$PROJECT_DIR$/../../Java_Task_2/src/test/java/epam/room_107/dudka/list/TestTransportList.java" />
     <entry file="file://$PROJECT_DIR$/../../Java_Task_2/src/main/java/epam/room_107/dudka/list/MixedList.java" />
     <entry file="file://$PROJECT_DIR$/../../Java_Task_2/src/main/java/epam/room_107/dudka/list/TransportList.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2.zip/Java_Task_2/src/main/java/epam/room_107/dudka/list/MixedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1612">
-          <caret line="130" column="36" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2.zip/Java_Task_2/src/main/java/epam/room_107/dudka/list/TransportList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="107" column="25" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2.zip/Java_Task_2/src/main/java/epam/room_107/dudka/list/MixedList.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2.zip/Java_Task_2/src/main/java/epam/room_107/dudka/list/TransportList.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3740">
@@ -883,103 +811,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="607" column="17" selection-start-line="607" selection-start-column="17" selection-end-line="607" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#54492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part2/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2 (2).zip/Java_Task_2/src/main/java/epam/room_107/dudka/list/TransportList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="240" column="21" lean-forward="true" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="21" />
-          <folding>
-            <element signature="e#6462#6463#0" expanded="true" />
-            <element signature="e#6508#6509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Drink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-365">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Pizza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part2/ProductList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-978">
-          <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task1/task1/part2/task1/ProductListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2414">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part2/Demo.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2 (2).zip/Java_Task_2/src/main/java/epam/room_107/dudka/list/TransportList.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Drink.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Pizza.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part1/Product.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/part2/ProductList.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/task1/part2/ProductList.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task1/task1/part2/task1/ProductListTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task1/part2/ProductListTest.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -987,60 +828,288 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Drink.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="-2500">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Food.java">
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part2/MixedListsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Microsoft.SkypeApp_kzf8qxf38zg5c!App/All/MixedListsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_preproduction_practice-task2.zip/preproduction_practice-task2/KharkivJavaTask2/src/test/java/CopyOnWriteListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Pizza.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="13" column="59" selection-start-line="12" selection-start-column="17" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Drink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2 (3).zip/Java_Task_2/src/main/java/epam/room_107/dudka/list/MixedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Java_Task_2 (3).zip/Java_Task_2/src/test/java/epam/room_107/dudka/list/TestMixedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="50" />
+          <folding>
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1341#1342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Microsoft.SkypeApp_kzf8qxf38zg5c!App/All/MixedListsTest (2).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1819">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#870#1063#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/ExpectException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part1/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-365">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task1/part2/ProductListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1003">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="467">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task1/part2/ProductList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4751">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="263">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part1/CopyOnWriteProductListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/part2/ProductListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task2/part2/TestMixedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-825">
+        <state relative-caret-position="-1875">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2239#2240#0" expanded="true" />
+            <element signature="e#2667#2668#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
+            <element signature="e#2983#2984#0" expanded="true" />
+            <element signature="e#3014#3015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/epam/pihnastyi/task1/part2/ProductListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part2/MixedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1093">
+          <caret line="110" column="31" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task2/part1/CopyOnWriteProductList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3340">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="302" column="19" selection-start-line="302" selection-start-column="19" selection-end-line="302" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#54492#0" expanded="true" />
+            <element signature="e#11079#11080#0" expanded="true" />
+            <element signature="e#11117#11118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/pihnastyi/task3/part1/ListWithoutDublicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
           </folding>
         </state>
       </provider>
